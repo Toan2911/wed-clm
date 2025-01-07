@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Bán Hàng</title>
+    <style>
+        /* Cài đặt cho ảnh nền */
+        body {
+            background-image: url('MA24T4COX0001_low-headbanner-1600x615.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Thanh điều hướng */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(46, 41, 41, 0.7);
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover {
+            background-color: #f39c12;
+        }
+
+        /* Nội dung trang */
+        .content {
+            text-align: center;
+            padding: 150px 20px;
+            color: white;
+        }
+
+        .content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+
+        /* Các sản phẩm */
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 50px;
+        }
+
+        .product-card {
+            background-color: rgba(143, 143, 143, 0.6);
+            /* Nền tối để làm nổi bật sản phẩm */
+            border-radius: 8px;
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            /* Hiệu ứng hover */
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin-top: 15px;
+            font-size: 24px;
+        }
+
+        .product-card p {
+            font-size: 18px;
+        }
+
+        .product-card button {
+            padding: 10px;
+            background-color: #f39c12;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product-card button:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Thanh điều hướng -->
+    <nav>
+        <ul>
+            <li><a href="/">Trang Chủ</a></li>
+            <li><a href="#products">Chăm Sóc </a></li>
+            <li><a href="/add">Tạo Tài Khoản</a></li>
+            <li><a href="/login"> Đăng Nhập</a></li>
+        </ul>
+    </nav>
+
+    <!-- Nội dung trang -->
+    <div class="content" id="home">
+        <h1>Chào Mừng Đến Với Cửa Hàng Của Chúng Tôi!</h1>
+        <p>Khám phá những sản phẩm tuyệt vời và mua sắm ngay hôm nay.</p>
+    </div>
+
+    <!-- Các sản phẩm -->
+    <div class="products" id="products">
+        <div class="product-card">
+            <img src="Porsche_992_Carrera_4S_Genf_2019_1Y7A5561.jpg" alt="Sản phẩm 1">
+            <h3> 911</h3>
+            <p>Giá: 11.056.100.000 VND</p>
+            <button>Mua Ngay</button>
+        </div>
+
+        <div class="product-card">
+            <img src="Porsche_718_Cayman_T_zing_1.webp" alt="Sản phẩm 2">
+            <h3>718</h3>
+            <p>Giá: 3.600.200.000 VND</p>
+            <button>Mua Ngay</button>
+        </div>
+
+        <div class="product-card">
+            <img src="Porsche-Taycan-Vnexpress-net-11-JPG.jpg" alt="Sản phẩm 3">
+            <h3> Taycan</h3>
+            <p>Giá: 8.000.150.000 VND</p>
+            <button>Mua Ngay</button>
+        </div>
+    </div>
+
+    <!-- Giới thiệu (tuỳ chọn) -->
+    <div id="about" style="padding: 50px; text-align: center; color: white;">
+        <h2>Giới Thiệu</h2>
+        <p>Chúng tôi cung cấp các sản phẩm chất lượng cao và dịch vụ chăm sóc khách hàng tận tâm.</p>
+    </div>
+
+    <!-- Liên hệ (tuỳ chọn) -->
+    <div id="contact" style="padding: 50px; text-align: center; color: white;">
+        <h2>Liên Hệ</h2>
+        <p>Email: contact@store.com</p>
+    </div>
+
+</body>
+
+</html>
